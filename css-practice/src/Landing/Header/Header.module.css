@@ -1,0 +1,71 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 1140px;
+    padding: 0.5rem;
+    padding-top: 20px;
+}
+
+.leftPart {
+    flex: 1 1 auto;
+}
+
+.rightPart {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    flex: 1 1 auto;
+    padding: 0 30px;
+    justify-content: space-around;
+}
+
+.linkBox {
+}
+
+.link {
+    display: block;
+    padding: 0.7rem 1rem;
+}
+
+.link:hover, .link:active {
+    color: #2a5bd7;
+}
+
+.sideLinks {
+    display: flex;
+}
+
+.loginLink, .signupLink {
+    display: block;
+    padding: 0.7rem 1.25rem;
+}
+
+.loginLink:hover, .loginLink:active {
+    color: #2a5bd7;
+}
+
+.signupLink {
+    color: #2a5bd7;
+}
+
+.getQuoteLink {
+    display: block;
+    background: #2a5bd7;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+}
+
+.getQuoteLink:hover, .getQuoteLink:active {
+    background: #0236B9;
+}
