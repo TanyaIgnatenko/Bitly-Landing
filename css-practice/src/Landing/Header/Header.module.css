@@ -1,10 +1,19 @@
+.header {
+    position: fixed;
+    top: 0;
+    background: white;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
+    margin: 0 129px;
+    padding: 0 15px;
 }
 
 .container {
     display: flex;
+    align-items: center;
     width: 1140px;
     padding: 0.5rem;
     padding-top: 20px;
@@ -22,9 +31,9 @@
 
 .nav {
     display: flex;
-    flex: 1 1 auto;
     padding: 0 30px;
     justify-content: space-around;
+    min-width: 530px;
 }
 
 .linkBox {
@@ -64,6 +73,7 @@
     margin-bottom: 1rem;
     padding: 0.7rem 1rem;
     border-radius: 6px;
+    border: 1px solid transparent;
 }
 
 .getQuoteLink:hover, .getQuoteLink:active {

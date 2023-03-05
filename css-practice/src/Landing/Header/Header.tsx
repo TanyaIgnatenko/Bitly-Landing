@@ -6,7 +6,8 @@ import styles from './Header.module.css';
 const Header = () => {
 
     return (
-        <header className={styles.wrapper}>
+        <header className={styles.header}>
+        <div className={styles.wrapper}>
         <div className={styles.container}>
             <div className={styles.leftPart}>
             <LogoLink />
@@ -46,6 +47,7 @@ const Header = () => {
                 </li>
             </ul>
             </div>
+        </div>
         </div>
         </header>
     )
