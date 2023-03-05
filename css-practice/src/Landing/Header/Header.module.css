@@ -2,19 +2,20 @@
     position: fixed;
     top: 0;
     background: white;
+    width: 100%;
 }
 
 .wrapper {
     display: flex;
     justify-content: center;
-    margin: 0 129px;
+    margin: 0 auto;
     padding: 0 15px;
+    max-width: 1170px;
 }
 
 .container {
     display: flex;
     align-items: center;
-    width: 1140px;
     padding: 0.5rem;
     padding-top: 20px;
 }
