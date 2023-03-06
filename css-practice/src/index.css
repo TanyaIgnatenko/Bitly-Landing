@@ -1,16 +1,14 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  color: #36383b;
-  font-family: "ProximaNova Regular", "Helvetica Neue", Helvetica,Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.4em;
 }
 
 * {
   box-sizing: border-box;
-  /*border: 1px solid red !important;*/
+  font-family: "ProximaNova Regular", "Helvetica Neue", Helvetica,Arial, sans-serif;
+  color: #36383b;
+  font-size: 16px;
+  line-height: 1.4em;
 }
 
 a {
