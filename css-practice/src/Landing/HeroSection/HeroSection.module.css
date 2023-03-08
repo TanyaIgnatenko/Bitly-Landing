@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+}
+
+.leftPart {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+}
+
+.rightPart {
+    background: url('https://docrdsfx76ssb.cloudfront.net/static/1677685360/pages/wp-content/uploads/2022/08/home-hero-mobile-v2.png');
+}
+
+.title {
+    font-family: "ProximaNova ExtraBold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    margin-bottom: 24px;
+}
+
+.getStartedLink {
+    display: inline-block;
+    padding: 18px 30px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background: #2a5bd7;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.11;
+    margin-bottom: 16px;
+}
+
+.getStartedLink:hover, .getStartedLink:active {
+    background: #0236b9;
+}
+
+.getQuoteLink {
+    display: inline-block;
+    color: #2a5bd7;
+}
+
+.linksBlock {
+    text-align: center;
+}

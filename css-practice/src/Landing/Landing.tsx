@@ -1,10 +1,15 @@
 import React from 'react';
 import Header from './Header/Header';
+import HeroSection from './HeroSection/HeroSection';
+
+import styles from './Landing.module.css';
 
 const Landing = () => {
+
     return (
-        <div>
+        <div className={styles.container}>
             <Header />
+            <HeroSection />
         </div>
     )
 };

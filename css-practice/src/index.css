@@ -19,3 +19,8 @@ a {
   font-family: "ProximaNova Regular";
   src: local('ProximaNova Regular'), url(./fonts/ProximaNovaRegular.woff) format('woff');
 }
+
+@font-face {
+  font-family: "ProximaNova ExtraBold";
+  src: local('ProximaNova ExtraBold'), url(./fonts/ProximaNovaExtraBold.woff) format('woff');
+}
