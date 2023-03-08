@@ -5,12 +5,18 @@
     width: 100%;
 }
 
-.wrapper {
+.container {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1170px;
+}
+
+.containerForSmall {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
 }
 
 .topPart {
@@ -21,10 +27,8 @@
     width: 100%;
 }
 
-@media (max-width: 1024px) {
-    .topPart {
-        padding-left: calc(0.5rem + 10px);
-    }
+.containerForSmall .topPart {
+    padding-left: calc(0.5rem + 10px);
 }
 
 .leftPart {
@@ -63,6 +67,8 @@
 .loginLink, .signupLink {
     display: block;
     padding: 0.7rem 1.25rem;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .loginLink:hover, .loginLink:active {
@@ -82,13 +88,15 @@
     padding: 0.7rem 1rem;
     border-radius: 6px;
     border: 1px solid transparent;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .getQuoteLink:hover, .getQuoteLink:active {
     background: #0236B9;
 }
 
-.rightPart.showForSmall {
+.containerForSmall .rightPart {
     justify-content: flex-end;
 }
 
@@ -128,12 +136,10 @@
     flex-direction: column;
     background: #0b1736;
     padding: 10px 20px;
-    margin-top: 280px;
+    margin: 280px -15px 0 -15px;
 }
 
 .bottomPart .loginLink, .bottomPart .signupLink, .bottomPart .getQuoteLink {
-    font-size: 16px;
-    line-height: 16px;
     color: white;
     text-align: center;
 }
