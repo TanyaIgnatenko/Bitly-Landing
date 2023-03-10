@@ -1,0 +1,65 @@
+.contentWrapper {
+    background: #0C1736;
+}
+
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+}
+
+.inputBlock {
+    display: flex;
+    flex-direction: column;
+    width: 72%;
+    margin-right: 20px;
+}
+
+.input {
+    height: 60px;
+    border: 1px solid #d3d4d7;
+    border-radius: 8px;
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.inputSignature {
+    margin-top: 10px;
+    color: #9ca1ad;
+    font-size: 14px;
+    line-height: 1.4em;
+    width: 100%;
+    text-align: right;
+}
+
+.shortenButton {
+    background: #1b3987;
+    color: white;
+    font-size: 20px;
+    line-height: 1.11;
+    padding: 18px 30px;
+    border: none;
+    border-radius: 6px;
+    min-width: 25%;
+    height: 60px;
+}
+
+.shortenButton:hover, .shortenButton:active {
+    background: #2a5bd7;
+}
+
+.link {
+    color: #9ca1ad;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.link:hover {
+    color: #a1b8f3;
+}
