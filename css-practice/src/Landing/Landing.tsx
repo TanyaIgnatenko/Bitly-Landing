@@ -1,4 +1,5 @@
 import React from 'react';
+import ProductsSection from './ProductsSection/ProductsSection';
 import Header from './Header/Header';
 import HeroSection from './HeroSection/HeroSection';
 
@@ -10,6 +11,7 @@ const Landing = () => {
         <div className={styles.container}>
             <Header />
             <HeroSection />
+            <ProductsSection />
         </div>
     )
 };

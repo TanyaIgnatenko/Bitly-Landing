@@ -13,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 @font-face {
@@ -23,4 +24,9 @@ a {
 @font-face {
   font-family: "ProximaNova ExtraBold";
   src: local('ProximaNova ExtraBold'), url(./fonts/ProximaNovaExtraBold.woff) format('woff');
+}
+
+@font-face {
+  font-family: "ProximaNova Bold";
+  src: local('ProximaNova Bold'), url(./fonts/ProximaNovaBold.woff) format('woff');
 }
