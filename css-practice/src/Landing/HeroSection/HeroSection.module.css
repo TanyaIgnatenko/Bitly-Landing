@@ -1,16 +1,29 @@
 .container {
-    display: flex;
+    position: relative;
+    top: 0;
+    background-image: url(https://docrdsfx76ssb.cloudfront.net/static/1678306332/pages/wp-content/uploads/2022/10/homepage-hero-a-bit-closer-desktop-v2.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 650px;
 }
 
-.leftPart {
+.contentWrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -35%);
+
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 50%;
-}
-
-.rightPart {
-    background: url('https://docrdsfx76ssb.cloudfront.net/static/1677685360/pages/wp-content/uploads/2022/08/home-hero-mobile-v2.png');
+    padding: 0 0.9375rem;
+    margin: 0 0.9375rem;
+    width: 100%;
 }
 
 .title {
