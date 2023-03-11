@@ -11,6 +11,7 @@ import FAQSection from "./FAQSection/FAQSection";
 import CTASection from './CTASection/CTASection';
 
 import styles from './Landing.module.css';
+import FooterSection from './FooterSection/FooterSection';
 
 const Landing = () => {
     return (
@@ -24,6 +25,7 @@ const Landing = () => {
             <OurClientsSection />
             <FAQSection />
             <CTASection />
+            <FooterSection />
         </div>
     )
 };
