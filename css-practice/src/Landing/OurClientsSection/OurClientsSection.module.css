@@ -1,0 +1,27 @@
+.contentWrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 5rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #2a2e30;
+    font-family: "ProximaNova ExtraBold","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 800;
+}
+
+.clientsBlock {
+    margin: 20px 0 16px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.clientLogo {
+    padding: 0 0.9375rem;
+    margin-bottom: 5px;
+}
