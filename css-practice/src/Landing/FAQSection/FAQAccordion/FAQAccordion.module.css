@@ -1,0 +1,70 @@
+.itemHeader {
+    padding: 20px 16px 20px 90px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    line-height: 1;
+}
+
+.itemHeader:not(:first-child) {
+    border-top: 1px solid #e6e6e6;
+}
+
+.itemHeader:hover, .itemHeader:active {
+    background: #e6e6e6;
+}
+
+.itemHeader::before {
+    content: url('https://docrdsfx76ssb.cloudfront.net/wp-content/uploads/2019/03/feather-icon-chevron-down.svg');
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    right: 1rem;
+    transform: translate(0,7px);
+    transition: transform 300ms;
+}
+
+.itemHeader.opened::before {
+    transform: rotate(180deg) translate(0,-3px);
+}
+
+.itemTitle {
+    display: inline-block;
+    color: #1d1f21;
+    font-family: "ProximaNova ExtraBold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.itemContent {
+    display: none;
+
+    padding: 15px 1rem 1rem 120px;
+    font-family: "ProximaNova Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+.answerParagraph {
+    margin-bottom: 16px;
+}
+
+.itemContent.opened {
+    display: block;
+}
+
+.answerActionLink {
+    background: #edf2fe;
+    color: #2a5bd7;
+    border-radius: 6px;
+    padding: 0.6em 1em;
+    border: 1px solid transparent;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.answerActionLink:hover, .answerActionLink:active {
+    background: #cedafa;
+    color: #2a5bd7;
+}

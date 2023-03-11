@@ -7,6 +7,7 @@ import ShortenLinkSection from "./ShortenLink/ShortenLinkSection";
 import StatisticsSection from './StatisticsSection/StatisticsSection';
 import FeedbackSection from "./FeedbackSection/FeedbackSection";
 import OurClientsSection from "./OurClientsSection/OurClientsSection";
+import FAQSection from "./FAQSection/FAQSection";
 
 import styles from './Landing.module.css';
 
@@ -20,6 +21,7 @@ const Landing = () => {
             <StatisticsSection />
             <FeedbackSection />
             <OurClientsSection />
+            <FAQSection />
         </div>
     )
 };
