@@ -8,6 +8,7 @@ import StatisticsSection from './StatisticsSection/StatisticsSection';
 import FeedbackSection from "./FeedbackSection/FeedbackSection";
 import OurClientsSection from "./OurClientsSection/OurClientsSection";
 import FAQSection from "./FAQSection/FAQSection";
+import CTASection from './CTASection/CTASection';
 
 import styles from './Landing.module.css';
 
@@ -22,6 +23,7 @@ const Landing = () => {
             <FeedbackSection />
             <OurClientsSection />
             <FAQSection />
+            <CTASection />
         </div>
     )
 };
