@@ -1,0 +1,77 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide {
+    border: 1px #000 solid;
+    border-radius: 30px;
+    padding: 40px 46px 31px 46px;
+    min-height: 300px;
+    width: 100%;
+}
+
+.citationIcon {
+    position: absolute;
+    right: 30px;
+    top: -30px;
+}
+
+.scoreImage {
+    margin-bottom: 25px;
+}
+
+.text {
+    color: #252628;
+    font-family: "ProximaNova ExtraBold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    padding: 5px;
+}
+
+.prevButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"black\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-chevron-left\"><polyline points=\"15 18 9 12 15 6\"></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #edf2fe;
+    border: none;
+    margin-right: 5px;
+}
+
+.nextButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"black\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-chevron-right\"><polyline points=\"9 18 15 12 9 6\"></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #edf2fe;
+    border: none;
+    margin-left: 5px;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 1px #000 solid;
+    background: #fff;
+    width: 24px;
+    height: 24px;
+    margin: 5px 7px;
+}
+
+.activeCircle {
+    background: #cedafa;
+}
