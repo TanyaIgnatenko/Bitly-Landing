@@ -87,7 +87,8 @@ const FAQAccordion = () => {
                         <div
                             data-index={index}
                             className={cn(styles.itemHeader, {
-                                [styles.opened]: index === openedItemIndex
+                                [styles.opened]: index === openedItemIndex,
+                                [styles.notFirst]: index !== 0,
                             })}
                             onClick={handleItemClick}
                         >

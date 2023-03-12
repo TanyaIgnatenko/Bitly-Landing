@@ -6,7 +6,7 @@
     line-height: 1;
 }
 
-.itemHeader:not(:first-child) {
+.itemHeader.notFirst {
     border-top: 1px solid #e6e6e6;
 }
 
