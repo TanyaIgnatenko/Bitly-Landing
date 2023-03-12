@@ -1,6 +1,11 @@
-.sectionDivider {
+.sectionDividerWrapper {
+    max-width: 1170px;
+    margin: -8px auto;
+    padding: 0 0.9375rem;
+}
+
+.sectionDividerWrapper hr {
     border: none;
     border-bottom: 1px solid #eff0f2;
-    max-width: 1170px;
-    margin: 0 auto;
+    height: 0;
 }

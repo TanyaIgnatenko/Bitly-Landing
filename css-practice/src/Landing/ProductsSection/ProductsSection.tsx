@@ -6,13 +6,15 @@ const ProductsSection = () => {
     return (
         <div className={styles.contentWrapper}>
             <div className={styles.content}>
-                <div className={styles.titleBox}>
-                    <h3 className={styles.title}>Bitly’s Connections Platform</h3>
-                    <h4 className={styles.description}>
-                        All the products you need to build brand connections, manage links and QR Codes, and
-                        <br/>
-                        connect with audiences everywhere, in a single unified platform.
-                    </h4>
+                <div className={styles.titleBoxWrapper}>
+                    <div className={styles.titleBox}>
+                        <h3 className={styles.title}>Bitly’s Connections Platform</h3>
+                        <h4 className={styles.description}>
+                            All the products you need to build brand connections, manage links and QR Codes, and
+                            <br/>
+                            connect with audiences everywhere, in a single unified platform.
+                        </h4>
+                    </div>
                 </div>
                 <div className={styles.productsBlock}>
                     <div className={styles.productCard}>

@@ -11,6 +11,7 @@
     flex-direction: column;
     margin: 0 .9375rem;
     padding: 0 0.9375rem;
+    flex: 1 1 0%;
 }
 
 .section {
@@ -27,8 +28,14 @@
     margin-bottom: 8px;
 }
 
+.secondLastColumn {
+    width: calc(16.66667% - 1.875rem);
+    flex: 0 0 auto;
+}
+
 .column:last-child {
     width: calc(25% - 1.875rem);
+    flex: 0 0 auto;
 }
 
 .copyright {

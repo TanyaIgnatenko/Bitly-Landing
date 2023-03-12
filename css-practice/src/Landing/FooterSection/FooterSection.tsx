@@ -1,3 +1,5 @@
+import cn from 'classnames';
+
 import styles from './FooterSection.module.css';
 
 const FooterSection = () => {
@@ -120,7 +122,7 @@ const FooterSection = () => {
                     </ul>
                 </div>
             </div>
-            <div className={styles.column}>
+            <div className={cn(styles.column, styles.secondLastColumn)}>
                 <div className={styles.section}>
                     <h4 className={styles.sectionTitle}>Company</h4>
                     <ul className={styles.sectionLinks}>
