@@ -157,16 +157,16 @@ const FooterSection = () => {
                 </p>
                 <div className={styles.socialMediaBlock}>
                     <a className={styles.socialMediaIconLink}>
-                        <i className="fi fi-brands-twitter" />
+                        <i className="fa-brands fa-twitter fa-xl" />
                     </a>
                     <a className={styles.socialMediaIconLink}>
-                        <i className="fi fi-brands-instagram" />
+                        <i className="fa-brands fa-instagram fa-xl" />
                     </a>
                     <a className={styles.socialMediaIconLink}>
-                        <i className="fi fi-brands-linkedin" />
+                        <i className="fa-brands fa-linkedin fa-xl" />
                     </a>
                     <a className={styles.socialMediaIconLink}>
-                        <i className="fi fi-brands-facebook" />
+                        <i className="fa-brands fa-facebook fa-xl" />
                     </a>
                 </div>
             </div>

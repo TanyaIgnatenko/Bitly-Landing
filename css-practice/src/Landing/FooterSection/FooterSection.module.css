@@ -42,12 +42,13 @@
 }
 
 .socialMediaIconLink:not(:first-child) {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 i {
     color: #56575b;
 }
+
 
 
 
