@@ -1,0 +1,6 @@
+.sectionDivider {
+    border: none;
+    border-bottom: 1px solid #eff0f2;
+    max-width: 1170px;
+    margin: 0 auto;
+}

@@ -18,11 +18,15 @@ const Landing = () => {
         <div className={styles.container}>
             <Header />
             <HeroSection />
+            <hr className={styles.sectionDivider} />
             <ProductsSection />
             <ShortenLinkSection />
             <StatisticsSection />
+            <hr className={styles.sectionDivider} />
             <FeedbackSection />
+            <hr className={styles.sectionDivider} />
             <OurClientsSection />
+            <hr className={styles.sectionDivider} />
             <FAQSection />
             <CTASection />
             <FooterSection />
