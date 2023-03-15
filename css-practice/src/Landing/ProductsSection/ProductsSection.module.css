@@ -165,3 +165,10 @@
         width: calc(100% - 20px);
     }
 }
+
+@media (width <= 991px) {
+    .description {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
