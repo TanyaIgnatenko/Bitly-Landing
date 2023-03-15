@@ -1,5 +1,8 @@
+import {useMedia} from 'react-use';
+
 import styles from './HeroSection.module.css';
 const HeroSection = () => {
+    const isMobileScreen = useMedia('(width < 640px)');
     return (
         <div className={styles.container}>
             <img
@@ -13,9 +16,9 @@ const HeroSection = () => {
                         <h1 className={styles.title}>
                             We’ve expanded!
                             <br/>
-                            Shorten URLs. Generate QR Codes.
-                            <br/>
-                            And now, create Link-in-bios.
+                            Shorten URLs. Generate{isMobileScreen ? <br/> : ' '}QR Codes.
+                            {!isMobileScreen ? <br/> : ' '}
+                            And now,{isMobileScreen ? <br/> : ' '}create Link-in-bios.
                             <br/>
                         </h1>
                         <div className={styles.linksBlock}>
