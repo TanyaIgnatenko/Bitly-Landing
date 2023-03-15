@@ -4,6 +4,7 @@
     padding-top: 60px;
 
     display: flex;
+    flex-wrap: wrap;
 }
 
 .column {
@@ -54,6 +55,17 @@
 
 i {
     color: #56575b;
+}
+
+@media (width < 1024px) {
+    .column, .column:last-child {
+        width: calc(33.33333% - 1.875rem);
+        flex: 0 0 auto;
+    }
+
+    .hideForMedium {
+        display: none;
+    }
 }
 
 

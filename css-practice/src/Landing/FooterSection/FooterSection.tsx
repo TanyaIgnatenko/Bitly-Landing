@@ -1,8 +1,36 @@
 import cn from 'classnames';
+import {useMedia} from 'react-use';
 
 import styles from './FooterSection.module.css';
 
 const FooterSection = () => {
+    const companySection = (
+      <div className={styles.section}>
+          <h4 className={styles.sectionTitle}>Company</h4>
+          <ul className={styles.sectionLinks}>
+              <li>
+                  <a className={styles.link}>About Bitly</a>
+              </li>
+              <li>
+                  <a className={styles.link}>Careers</a>
+              </li>
+              <li>
+                  <a className={styles.link}>Partners</a>
+              </li>
+              <li>
+                  <a className={styles.link}>Press</a>
+              </li>
+              <li>
+                  <a className={styles.link}>Contact</a>
+              </li>
+              <li>
+                  <a className={styles.link}>Reviews</a>
+              </li>
+          </ul>
+      </div>
+    );
+    const isLargeScreen = useMedia('(width >= 1024px)');
+
     return (
         <div className={styles.contentWrapper}>
             <div className={styles.column}>
@@ -37,6 +65,7 @@ const FooterSection = () => {
                         </li>
                     </ul>
                 </div>
+                {!isLargeScreen && companySection}
             </div>
             <div className={styles.column}>
                 <div className={styles.section}>
@@ -122,30 +151,8 @@ const FooterSection = () => {
                     </ul>
                 </div>
             </div>
-            <div className={cn(styles.column, styles.secondLastColumn)}>
-                <div className={styles.section}>
-                    <h4 className={styles.sectionTitle}>Company</h4>
-                    <ul className={styles.sectionLinks}>
-                        <li>
-                            <a className={styles.link}>About Bitly</a>
-                        </li>
-                        <li>
-                            <a className={styles.link}>Careers</a>
-                        </li>
-                        <li>
-                            <a className={styles.link}>Partners</a>
-                        </li>
-                        <li>
-                            <a className={styles.link}>Press</a>
-                        </li>
-                        <li>
-                            <a className={styles.link}>Contact</a>
-                        </li>
-                        <li>
-                            <a className={styles.link}>Reviews</a>
-                        </li>
-                    </ul>
-                </div>
+            <div className={cn(styles.column, styles.secondLastColumn, styles.hideForMedium)}>
+                {isLargeScreen && companySection}
             </div>
             <div className={styles.column}>
                 <img
