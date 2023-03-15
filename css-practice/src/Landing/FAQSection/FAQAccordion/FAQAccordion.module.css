@@ -60,6 +60,7 @@
     border-radius: 6px;
     padding: 0.6em 1em;
     border: 1px solid transparent;
+    text-align: center;
     display: inline-block;
     margin-bottom: 16px;
 }
@@ -67,4 +68,20 @@
 .answerActionLink:hover, .answerActionLink:active {
     background: #cedafa;
     color: #2a5bd7;
+}
+
+@media (width <= 1024px) {
+    .itemContent {
+        padding-left: 1rem;
+    }
+
+    .itemHeader {
+        padding-left: 1rem;
+    }
+}
+
+@media (width <= 768px) {
+    .answerActionLink {
+        width: 100%;
+    }
 }
