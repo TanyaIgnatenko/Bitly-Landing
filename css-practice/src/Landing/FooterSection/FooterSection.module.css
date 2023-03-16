@@ -66,6 +66,17 @@ i {
     .hideForMedium {
         display: none;
     }
+
+    .socialMediaBlock {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+}
+
+@media (width < 640px) {
+    .column, .column:last-child {
+        width: calc(100% - 1.25rem);
+    }
 }
 
 
