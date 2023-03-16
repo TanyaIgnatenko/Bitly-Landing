@@ -42,7 +42,9 @@ const feedbacks = [
 const FeedbackSection = () => {
     return (
         <div className={styles.contentWrapper}>
-            <h3 className={styles.title}>What Bitly customers are saying</h3>
+            <div className={styles.titleWrapper}>
+                <h3 className={styles.title}>What Bitly customers are saying</h3>
+            </div>
             <FeedbackCarousel className={styles.carousel} slides={feedbacks} />
         </div>
     );
