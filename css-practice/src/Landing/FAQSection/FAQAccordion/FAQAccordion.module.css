@@ -4,6 +4,10 @@
     display: block;
     position: relative;
     line-height: 1;
+    border: none;
+    background: #fff;
+    width: 100%;
+    text-align: start;
 }
 
 .itemHeader.notFirst {

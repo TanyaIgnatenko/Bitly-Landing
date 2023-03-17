@@ -83,19 +83,18 @@ const FAQAccordion = () => {
         <div className={styles.container}>
             {items.map((i, index) => (
                     <div className={styles.itemContainer}>
-                        <div
+                        <button
                             data-index={index}
                             className={cn(styles.itemHeader, {
                                 [styles.opened]: index === openedItemIndex,
                                 [styles.notFirst]: index !== 0,
                             })}
                             onClick={handleItemClick}
-                            tabIndex={0}
                         >
                             <p className={styles.itemTitle}>
                                 {i.question}
                             </p>
-                        </div>
+                        </button>
                         <div className={cn(styles.itemContent, {[styles.opened]: index === openedItemIndex})}>
                             {i.answerParagraphs.map(p => (
                                 <p className={styles.answerParagraph}>
