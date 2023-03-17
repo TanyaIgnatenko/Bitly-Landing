@@ -28,8 +28,8 @@ const ProductsSection = () => {
                             <li className={styles.feature}>URL redirects</li>
                             <li className={styles.feature}>Advanced analytics & tracking</li>
                         </ul>
-                        <a className={styles.getStartedForFreeLink}>Get Started for Free</a>
-                        <a className={styles.learnMoreLink}>Learn More</a>
+                        <a href="" className={styles.getStartedForFreeLink}>Get Started for Free</a>
+                        <a href="" className={styles.learnMoreLink}>Learn More</a>
                     </div>
 
                     <div className={styles.productCard}>
@@ -45,8 +45,8 @@ const ProductsSection = () => {
                             <li className={styles.feature}>QR Code types & destination options</li>
                             <li className={styles.feature}>Advanced analytics & tracking</li>
                         </ul>
-                        <a className={styles.getStartedForFreeLink}>Get Started for Free</a>
-                        <a className={styles.learnMoreLink}>Learn More</a>
+                        <a href="" className={styles.getStartedForFreeLink}>Get Started for Free</a>
+                        <a href="" className={styles.learnMoreLink}>Learn More</a>
                     </div>
 
                     <div className={styles.productCard}>
@@ -64,8 +64,8 @@ const ProductsSection = () => {
                             <li className={styles.feature}>Easy-to-manage links</li>
                             <li className={styles.feature}>Link and landing page tracking</li>
                         </ul>
-                        <a className={styles.getStartedForFreeLink}>Get Started for Free</a>
-                        <a className={styles.learnMoreLink}>Learn More</a>
+                        <a href="" className={styles.getStartedForFreeLink}>Get Started for Free</a>
+                        <a href="" className={styles.learnMoreLink}>Learn More</a>
                     </div>
                 </div>
             </div>

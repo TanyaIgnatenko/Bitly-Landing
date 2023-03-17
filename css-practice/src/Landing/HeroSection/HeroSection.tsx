@@ -22,9 +22,9 @@ const HeroSection = () => {
                             <br/>
                         </h1>
                         <div className={styles.linksBlock}>
-                            <a className={styles.getStartedLink}>Get Started for Free</a>
+                            <a href="" className={styles.getStartedLink}>Get Started for Free</a>
                             <br />
-                            <a className={styles.getQuoteLink}>Get a Quote</a>
+                            <a href="" className={styles.getQuoteLink}>Get a Quote</a>
                         </div>
                     </div>
                 </div>

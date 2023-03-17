@@ -76,7 +76,6 @@ const FAQAccordion = () => {
     const [openedItemIndex, setOpenedItemIndex] = useState<number | null>(null);
     const handleItemClick = useCallback((e: React.MouseEvent) => {
         const itemIndex = +e.currentTarget.dataset.index;
-        console.log('itemIndex', itemIndex);
         setOpenedItemIndex(i => itemIndex === i ? null : itemIndex);
     }, []);
 
@@ -91,6 +90,7 @@ const FAQAccordion = () => {
                                 [styles.notFirst]: index !== 0,
                             })}
                             onClick={handleItemClick}
+                            tabIndex={0}
                         >
                             <p className={styles.itemTitle}>
                                 {i.question}
