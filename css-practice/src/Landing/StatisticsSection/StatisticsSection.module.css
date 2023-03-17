@@ -6,7 +6,7 @@
 .content {
     margin: 0 auto;
     max-width: 1170px;
-    padding: 0 0.9375rem;
+    padding: 0 1.25rem;
     display: flex;
     align-items: center;
 }
@@ -22,16 +22,12 @@
 }
 
 .statisticsBlock {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0.9375rem;
-    padding: 0 0.9375rem;
+    display: table;
     margin-bottom: 32px;
 }
 
 .statisticsItem {
-    display: flex;
-    align-items: center;
+    display: table-row;
     border-bottom: 1px solid rgb(232, 233, 235);
 }
 
@@ -44,12 +40,16 @@
     width: 30%;
     text-align: right;
     padding: 8px 20px 10px 10px;
+    display: table-cell;
 }
 
 .statisticsName {
     font-size: 20px;
     line-height: 22px;
     padding: 8px 10px 10px 10px;
+    width: 70%;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 @media (width < 1024px) {
@@ -58,6 +58,6 @@
     }
 
     .statisticsBlock {
-       width: calc(100% - 1.875rem);
+       width: 100%;
     }
 }
