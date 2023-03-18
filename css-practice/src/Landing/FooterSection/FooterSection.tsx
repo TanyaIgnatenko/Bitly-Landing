@@ -165,16 +165,16 @@ const FooterSection = () => {
                     © 2023 Bitly | Handmade in New York City, Denver, Berlin, Bielefeld, and all over the world.
                 </p>
                 <div className={styles.socialMediaBlock}>
-                    <a href="" className={styles.socialMediaIconLink}>
+                    <a href="" className={styles.socialMediaIconLink} aria-label="twitter">
                         <i className="fa-brands fa-twitter fa-xl" />
                     </a>
-                    <a href="" className={styles.socialMediaIconLink}>
+                    <a href="" className={styles.socialMediaIconLink} aria-label="instagram">
                         <i className="fa-brands fa-instagram fa-xl" />
                     </a>
-                    <a href="" className={styles.socialMediaIconLink}>
+                    <a href="" className={styles.socialMediaIconLink} aria-label="linkedin">
                         <i className="fa-brands fa-linkedin fa-xl" />
                     </a>
-                    <a href="" className={styles.socialMediaIconLink}>
+                    <a href="" className={styles.socialMediaIconLink} aria-label="facebook">
                         <i className="fa-brands fa-facebook fa-xl" />
                     </a>
                 </div>

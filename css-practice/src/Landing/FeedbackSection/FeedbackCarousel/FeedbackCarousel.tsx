@@ -42,7 +42,7 @@ const FeedbackCarousel: FC<FeedbackCarousel> = ({slides, className}) => {
                 <p className={styles.author}>{slides[currentSlideIndex].author.name} – {slides[currentSlideIndex].author.role}</p>
             </div>
             <div className={styles.navigation}>
-                <button className={styles.prevButton} onClick={handlePrevClick} />
+                <button className={styles.prevButton} onClick={handlePrevClick} aria-label="Previous feedback" />
                 {slides.map((s, i) => (
                     <div
                         key={i}
@@ -51,7 +51,7 @@ const FeedbackCarousel: FC<FeedbackCarousel> = ({slides, className}) => {
                         })}
                     />
                 ))}
-                <button className={styles.nextButton} onClick={handleNextClick} />
+                <button className={styles.nextButton} onClick={handleNextClick} aria-label="Next feedback"/>
             </div>
         </div>
     );
