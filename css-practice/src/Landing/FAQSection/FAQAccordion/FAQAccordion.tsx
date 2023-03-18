@@ -84,18 +84,25 @@ const FAQAccordion = () => {
             {items.map((i, index) => (
                     <div className={styles.itemContainer}>
                         <button
+                            id={`item-header-${index}`}
                             data-index={index}
                             className={cn(styles.itemHeader, {
                                 [styles.opened]: index === openedItemIndex,
                                 [styles.notFirst]: index !== 0,
                             })}
                             onClick={handleItemClick}
+                            aria-expanded={openedItemIndex === index}
+                            aria-controls={`item-content-${index}`}
                         >
                             <p className={styles.itemTitle}>
                                 {i.question}
                             </p>
                         </button>
-                        <div className={cn(styles.itemContent, {[styles.opened]: index === openedItemIndex})}>
+                        <div
+                          id={`item-content-${index}`}
+                          aria-labelledby={`item-header-${index}`}
+                          className={cn(styles.itemContent, {[styles.opened]: index === openedItemIndex})}
+                        >
                             {i.answerParagraphs.map(p => (
                                 <p className={styles.answerParagraph}>
                                     {p}
