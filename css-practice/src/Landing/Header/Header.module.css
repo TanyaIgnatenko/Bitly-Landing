@@ -83,24 +83,8 @@
 }
 
 .getQuoteLink {
-    display: block;
-    background: #2a5bd7;
-    color: white;
     margin-left: 20px;
     margin-bottom: 1rem;
-    padding: 0.7rem 1rem;
-    border-radius: 6px;
-    border: 1px solid transparent;
-    font-size: 16px;
-    line-height: 16px;
-}
-
-.getQuoteLink:hover, .getQuoteLink:active {
-    background: #0236B9;
-}
-
-.getQuoteLink:focus {
-    outline-color: #70a3ef;
 }
 
 .containerForSmall .rightPart {

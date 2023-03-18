@@ -130,20 +130,10 @@
 }
 
 .getStartedForFreeLink {
-    display: block;
-    text-align: center;
-    background: #2a5bd7;
-    border-radius: 6px;
-    color: #fff;
     line-height: 19.5px;
     transition: background 100ms linear;
 
-    padding: 0.6em 1em;
     margin-bottom: 16px;
-}
-
-.getStartedForFreeLink:hover, .getStartedForFreeLink:active {
-    background: #0236B9;
 }
 
 .learnMoreLink {

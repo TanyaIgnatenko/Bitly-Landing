@@ -3,10 +3,11 @@ import FocusLock from 'react-focus-lock';
 import {useMedia} from 'react-use';
 import cn from 'classnames';
 
-import LogoLink from './LogoLink/LogoLink'
-  ;
-import styles from './Header.module.css';
 import {useBinaryState} from '../../utils/useBinaryState';
+import LogoLink from './LogoLink/LogoLink'
+import ActionLink from '../components/ActionLink/ActionLink';
+
+import styles from './Header.module.css';
 
 const Header = () => {
     const isLarge = useMedia('(min-width: 1025px)');
@@ -50,7 +51,7 @@ const Header = () => {
                                     <a href="" className={styles.signupLink}>Sign up Free</a>
                                 </li>
                                 <li>
-                                    <a href="" className={styles.getQuoteLink}>Get a Quote</a>
+                                    <ActionLink href="" size="m" className={styles.getQuoteLink}>Get a Quote</ActionLink>
                                 </li>
                             </ul>
                         </div>
@@ -121,7 +122,7 @@ const Header = () => {
                                 <a href="" className={styles.signupLink}>Sign up Free</a>
                             </li>
                             <li className={styles.sideLinkItem}>
-                                <a href="" className={styles.getQuoteLink}>Get a Quote</a>
+                              <ActionLink href="" size="m" className={styles.getQuoteLink}>Get a Quote</ActionLink>
                             </li>
                         </ul>
                   </div>

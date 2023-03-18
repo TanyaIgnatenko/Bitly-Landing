@@ -1,0 +1,35 @@
+.actionLink {
+    display: block;
+    background: #2a5bd7;
+    color: white;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    font-family: "ProximaNova Regular", "Helvetica Neue", Helvetica,Arial, sans-serif;
+    text-align: center;
+}
+
+.actionLink:focus {
+    outline-color: #70a3ef;
+}
+
+.actionLink:hover, .actionLink:active {
+    background: #0236b9;
+}
+
+.actionLink_size_s {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0.6em 1em;
+}
+
+.actionLink_size_m {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0.7rem 1rem;
+}
+
+.actionLink_size_l {
+    padding: 18px 30px;
+    font-size: 20px;
+    line-height: 1.11;
+}

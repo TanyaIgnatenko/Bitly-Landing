@@ -1,5 +1,7 @@
 import {useMedia} from 'react-use';
 
+import ActionLink from '../components/ActionLink/ActionLink';
+
 import styles from './HeroSection.module.css';
 const HeroSection = () => {
     const isMobileScreen = useMedia('(width < 640px)');
@@ -24,7 +26,7 @@ const HeroSection = () => {
                             <br/>
                         </h1>
                         <div className={styles.linksBlock}>
-                            <a href="" className={styles.getStartedLink}>Get Started for Free</a>
+                            <ActionLink href="" size="l" className={styles.getStartedLink}>Get Started for Free</ActionLink>
                             <br />
                             <a href="" className={styles.getQuoteLink}>Get a Quote</a>
                         </div>

@@ -8,7 +8,7 @@ const items = [
         question: 'What is a URL shortener?',
         answerParagraphs: [
             'A URL shortener, also known as a link shortener, seems like a simple tool, but it is a service that can have a dramatic impact on your marketing efforts.',
-            'Link shorteners work by transforming any long URL into a shorter, more readable link. When a user clicks the shortened version, they’re automatically forwarded to the destination URL.',
+            'ActionLink shorteners work by transforming any long URL into a shorter, more readable link. When a user clicks the shortened version, they’re automatically forwarded to the destination URL.',
             'Think of a short URL as a more descriptive and memorable nickname for your long webpage address. You can, for example, use a short URL like bit.ly/CelebrateBitly so people will have a good idea about where your link will lead before they click it.',
             'If you’re contributing content to the online world, you need a URL shortener.',
             'Make your URLs stand out with our easy to use free link shortener above.',
@@ -54,9 +54,9 @@ const items = [
         answerActionLinkLabel: null,
     },
     {
-        question: 'What is a Link-in-bio?',
+        question: 'What is a ActionLink-in-bio?',
         answerParagraphs: [
-            'The term “Link-in-bio” refers to the clickable URL that you can add to your profile section for social media. Most social media platforms give you the option to add a link in your bio to take followers to your website, product page, content or some other important page.',
+            'The term “ActionLink-in-bio” refers to the clickable URL that you can add to your profile section for social media. Most social media platforms give you the option to add a link in your bio to take followers to your website, product page, content or some other important page.',
         ],
         answerActionLink: null,
         answerActionLinkLabel: null,
