@@ -75,6 +75,7 @@ const items = [
 const FAQAccordion = () => {
     const [openedItemIndex, setOpenedItemIndex] = useState<number | null>(null);
     const handleItemClick = useCallback((e: React.MouseEvent) => {
+        // @ts-ignore
         const itemIndex = +e.currentTarget.dataset.index;
         setOpenedItemIndex(i => itemIndex === i ? null : itemIndex);
     }, []);

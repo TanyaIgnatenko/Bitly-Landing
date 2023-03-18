@@ -14,6 +14,7 @@ const OurClientsSection = () => {
                         width="160"
                         height="60"
                         alt="Novasol"
+                        loading="lazy"
                     />
                 </li>
                 <li className={styles.clientLogoItem}>
@@ -23,6 +24,7 @@ const OurClientsSection = () => {
                         width="160"
                         height="60"
                         alt="Big fish"
+                        loading="lazy"
                     />
                 </li>
                 <li className={styles.clientLogoItem}>
@@ -32,6 +34,7 @@ const OurClientsSection = () => {
                         width="160"
                         height="60"
                         alt="Marriott"
+                        loading="lazy"
                     />
                 </li>
                 <li className={styles.clientLogoItem}>
@@ -41,6 +44,7 @@ const OurClientsSection = () => {
                         width="160"
                         height="60"
                         alt="New yourk times"
+                        loading="lazy"
                     />
                 </li>
                 <li className={styles.clientLogoItem}>
@@ -50,6 +54,7 @@ const OurClientsSection = () => {
                         width="160"
                         height="60"
                         alt="Electronic arts"
+                        loading="lazy"
                     />
                 </li>
             </ul>

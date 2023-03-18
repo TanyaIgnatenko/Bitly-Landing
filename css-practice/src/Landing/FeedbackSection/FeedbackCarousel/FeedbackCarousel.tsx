@@ -32,6 +32,7 @@ const FeedbackCarousel: FC<FeedbackCarousel> = ({slides, className}) => {
                     width="80"
                     height="80"
                     alt=""
+                    loading="lazy"
                 />
                 <img
                     src="https://docrdsfx76ssb.cloudfront.net/static/1678306332/pages/wp-content/uploads/2021/11/stars-quote-widget.png"
@@ -39,6 +40,7 @@ const FeedbackCarousel: FC<FeedbackCarousel> = ({slides, className}) => {
                     width="110"
                     height="24"
                     alt="Review score: 5 stars"
+                    loading="lazy"
                 />
                 <p className={styles.text}>{slides[currentSlideIndex].text}</p>
                 <p className={styles.author}>{slides[currentSlideIndex].author.name} – {slides[currentSlideIndex].author.role}</p>

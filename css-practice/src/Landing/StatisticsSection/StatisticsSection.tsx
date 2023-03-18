@@ -10,6 +10,7 @@ const StatisticsSection = () => {
                         height="420"
                         className={styles.image}
                         alt=""
+                        loading="lazy"
                     />
                 </div>
                 <ul className={styles.statisticsBlock}>
