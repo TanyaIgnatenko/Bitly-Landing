@@ -13,6 +13,7 @@ const OurClientsSection = () => {
                         className={styles.clientLogo}
                         width="160"
                         height="60"
+                        alt="Novasol"
                     />
                 </li>
                 <li className={styles.clientLogoItem}>
@@ -21,6 +22,7 @@ const OurClientsSection = () => {
                         className={styles.clientLogo}
                         width="160"
                         height="60"
+                        alt="Big fish"
                     />
                 </li>
                 <li className={styles.clientLogoItem}>
@@ -29,6 +31,7 @@ const OurClientsSection = () => {
                         className={styles.clientLogo}
                         width="160"
                         height="60"
+                        alt="Marriott"
                     />
                 </li>
                 <li className={styles.clientLogoItem}>
@@ -37,6 +40,7 @@ const OurClientsSection = () => {
                         className={styles.clientLogo}
                         width="160"
                         height="60"
+                        alt="New yourk times"
                     />
                 </li>
                 <li className={styles.clientLogoItem}>
@@ -45,6 +49,7 @@ const OurClientsSection = () => {
                         className={styles.clientLogo}
                         width="160"
                         height="60"
+                        alt="Electronic arts"
                     />
                 </li>
             </ul>

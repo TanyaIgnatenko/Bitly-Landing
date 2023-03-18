@@ -9,6 +9,7 @@ const StatisticsSection = () => {
                         width="550"
                         height="420"
                         className={styles.image}
+                        alt=""
                     />
                 </div>
                 <ul className={styles.statisticsBlock}>

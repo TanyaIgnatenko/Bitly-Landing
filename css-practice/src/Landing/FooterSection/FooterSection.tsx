@@ -160,6 +160,7 @@ const FooterSection = () => {
                     width="84"
                     height="42"
                     className={styles.logo}
+                    alt="Bitly logo"
                 />
                 <p className={styles.copyright}>
                     © 2023 Bitly | Handmade in New York City, Denver, Berlin, Bielefeld, and all over the world.
