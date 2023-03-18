@@ -63,6 +63,7 @@
 .mobileHeroImage {
     display: none;
     width: 100%;
+    height: auto;
 }
 
 @media (width < 1024px) {

@@ -11,30 +11,40 @@ const OurClientsSection = () => {
                     <img
                         src="https://docrdsfx76ssb.cloudfront.net/static/1678306332/pages/wp-content/uploads/2022/06/novasol.svg"
                         className={styles.clientLogo}
+                        width="160"
+                        height="60"
                     />
                 </li>
                 <li className={styles.clientLogoItem}>
                     <img
                         src="https://docrdsfx76ssb.cloudfront.net/static/1678306332/pages/wp-content/uploads/2022/06/big-fish.svg"
                         className={styles.clientLogo}
+                        width="160"
+                        height="60"
                     />
                 </li>
                 <li className={styles.clientLogoItem}>
                     <img
                         src="https://docrdsfx76ssb.cloudfront.net/static/1678306332/pages/wp-content/uploads/2022/06/marriott.svg"
                         className={styles.clientLogo}
+                        width="160"
+                        height="60"
                     />
                 </li>
                 <li className={styles.clientLogoItem}>
                     <img
                         src="https://docrdsfx76ssb.cloudfront.net/static/1678306332/pages/wp-content/uploads/2022/06/new-york-times.svg"
                         className={styles.clientLogo}
+                        width="160"
+                        height="60"
                     />
                 </li>
                 <li className={styles.clientLogoItem}>
                     <img
                         src="https://docrdsfx76ssb.cloudfront.net/static/1678306332/pages/wp-content/uploads/2022/06/electronic-arts.svg"
                         className={styles.clientLogo}
+                        width="160"
+                        height="60"
                     />
                 </li>
             </ul>

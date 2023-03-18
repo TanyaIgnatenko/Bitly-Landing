@@ -9,6 +9,8 @@ const HeroSection = () => {
                 className={styles.mobileHeroImage}
                 src="https://docrdsfx76ssb.cloudfront.net/static/1678306332/pages/wp-content/uploads/2022/08/home-hero-mobile-v2.png"
                 alt=""
+                width="761"
+                height="655"
             />
             <div className={styles.heroContainer}>
                 <div className={styles.contentWrapper}>

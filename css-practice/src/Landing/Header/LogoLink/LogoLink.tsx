@@ -9,6 +9,8 @@ const LogoLink = (props: React.HTMLProps<HTMLAnchorElement>) => {
                 className={styles.logo}
                 src="https://docrdsfx76ssb.cloudfront.net/static/1675956644/pages/wp-content/uploads/2021/08/bitly_logo.svg"
                 alt="Bitly logo"
+                width="100"
+                height="50"
             />
         </a>
     );
