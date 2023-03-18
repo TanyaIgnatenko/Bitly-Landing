@@ -1,8 +1,10 @@
 import React from 'react';
-import LogoLink from './LogoLink/LogoLink';
-import cn from 'classnames';
+import FocusLock from 'react-focus-lock';
 import {useMedia} from 'react-use';
+import cn from 'classnames';
 
+import LogoLink from './LogoLink/LogoLink'
+  ;
 import styles from './Header.module.css';
 import {useBinaryState} from '../../utils/useBinaryState';
 
@@ -55,7 +57,7 @@ const Header = () => {
                     </div>
                 </div>
              )}
-             {(isMenuOpened || !isLarge) && (
+             {(!isLarge && !isMenuOpened) && (
                  <div className={styles.containerForSmall}>
                     <div className={styles.topPart}>
                         <div className={styles.leftPart}>
@@ -64,15 +66,30 @@ const Header = () => {
                         <div className={styles.rightPart}>
                            <button
                                className={
-                                   cn(styles.menuButton, isMenuOpened
-                                       ? styles.openedMenuButton
-                                       : styles.closedMenuButton)
+                                   cn(styles.menuButton, styles.closedMenuButton)
                                }
                                onClick={toggleIsMenuOpened}
                            />
                         </div>
                     </div>
-                {isMenuOpened && (
+                 </div>
+             )}
+            {isMenuOpened && (
+               <FocusLock>
+                  <div className={styles.containerForSmall}>
+                    <div className={styles.topPart}>
+                      <div className={styles.leftPart}>
+                        <LogoLink />
+                      </div>
+                      <div className={styles.rightPart}>
+                        <button
+                          className={
+                            cn(styles.menuButton, styles.openedMenuButton)
+                          }
+                          onClick={toggleIsMenuOpened}
+                        />
+                      </div>
+                    </div>
                     <div className={styles.bottomPart}>
                         <ul className={styles.nav}>
                             <li className={styles.linkBox}>
@@ -107,10 +124,10 @@ const Header = () => {
                                 <a href="" className={styles.getQuoteLink}>Get a Quote</a>
                             </li>
                         </ul>
+                  </div>
                 </div>
-               )}
-           </div>
-         )}
+             </FocusLock>
+          )}
        </header>
     );
 };
