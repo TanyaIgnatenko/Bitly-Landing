@@ -23,6 +23,12 @@ const FeedbackCarousel: FC<FeedbackCarousel> = ({slides, className}) => {
         setCurrentSlideIndex(i => i === 0 ? slides.length - 1 : i - 1);
     }, [slides.length]);
 
+    const handleSlideClick = useCallback((e: React.MouseEvent) => {
+        // @ts-ignore
+        const slideIndex = +e.currentTarget.dataset.index;
+        setCurrentSlideIndex(slideIndex);
+    }, []);
+
     return (
         <div className={cn(styles.container, className)}>
             <div className={styles.slide}>
@@ -48,11 +54,14 @@ const FeedbackCarousel: FC<FeedbackCarousel> = ({slides, className}) => {
             <div className={styles.navigation}>
                 <button className={styles.prevButton} onClick={handlePrevClick} aria-label="Previous feedback" />
                 {slides.map((s, i) => (
-                    <div
+                    <button
+                        data-index={i}
                         key={i}
                         className={cn(styles.circle, {
                             [styles.activeCircle]: i === currentSlideIndex,
                         })}
+                        aria-label={`Go to feedback ${i + 1} of ${slides.length}`}
+                        onClick={handleSlideClick}
                     />
                 ))}
                 <button className={styles.nextButton} onClick={handleNextClick} aria-label="Next feedback"/>
