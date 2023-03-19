@@ -17,7 +17,6 @@
 .containerForSmall {
     display: flex;
     flex-direction: column;
-    padding: 0 15px;
 }
 
 .topPart {
@@ -47,6 +46,10 @@
     padding: 0 30px;
     justify-content: space-around;
     min-width: 530px;
+}
+
+.bottomPart .nav {
+    min-width: initial;
 }
 
 .linkBox {
@@ -150,7 +153,6 @@
     flex-direction: column;
     background: #0b1736;
     padding: 10px 20px;
-    margin: 0 -15px;
     position: absolute;
     bottom: 0;
     width: 100%;
