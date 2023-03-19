@@ -1,6 +1,6 @@
 This project is a clone of the Bitly landing page.
 
-**DEMO:** https://tanyaignatenko.github.io/css-practice
+**DEMO:** https://tanyaignatenko.github.io/bitly-landing
 
 
 #### Showcase of:
