@@ -1,6 +1,7 @@
 .itemHeader {
-    display: flex;
-    padding: 20px 16px 20px 90px;
+    display: block;
+    padding: 1.25rem 1rem;
+    padding-left: 90px;
     cursor: pointer;
     position: relative;
     line-height: 1;
@@ -21,11 +22,17 @@
 .itemHeader::before {
     content: url('https://docrdsfx76ssb.cloudfront.net/wp-content/uploads/2019/03/feather-icon-chevron-down.svg');
     display: inline-block;
+    width: 24px;
+    height: 24px;
     position: relative;
     top: 50%;
     right: 1rem;
     transform: translate(0,7px);
     transition: transform 300ms;
+}
+
+.itemHeader.opened {
+    background: #e6e6e6;
 }
 
 .itemHeader.opened::before {
@@ -78,14 +85,20 @@
     .itemContent {
         padding-left: 1rem;
     }
-
-    .itemHeader {
-        padding-left: 1rem;
-    }
 }
 
 @media (width <= 768px) {
     .answerActionLink {
         width: 100%;
+    }
+
+    .itemHeader {
+        padding-left: 40px;
+    }
+
+    .itemHeader::before {
+        position: absolute;
+        left: 0;
+        top: 10px;
     }
 }
