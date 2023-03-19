@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React, { useCallback, useEffect, useState } from "react";
 import FocusLock from 'react-focus-lock';
 import {useMedia} from 'react-use';
 import cn from 'classnames';
@@ -16,8 +16,22 @@ const Header = () => {
       e.preventDefault();
     }, []);
 
+    const [isPageScrolled, setIsPageScrolled] = useState(false);
+    useEffect(() => {
+      const handleScroll = () => {
+        setIsPageScrolled(window.scrollY > 0)
+      }
+      window.addEventListener('scroll', handleScroll);
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll)
+      }
+    }, [])
+
     return (
-        <header className={styles.header}>
+        <header className={cn(styles.header, {
+          [styles.sticky]: isPageScrolled,
+        })}>
             {isLarge && !isMenuOpened && (
                 <div className={styles.container}>
                     <div className={styles.topPart}>
