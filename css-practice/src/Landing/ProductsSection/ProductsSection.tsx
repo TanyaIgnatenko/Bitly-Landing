@@ -1,3 +1,4 @@
+import React, { useCallback } from "react";
 import cn from 'classnames';
 
 import ActionLink from "../components/ActionLink/ActionLink";
@@ -5,7 +6,9 @@ import ActionLink from "../components/ActionLink/ActionLink";
 import styles from './ProductsSection.module.css';
 
 const ProductsSection = () => {
-
+    const doNothingOnLinkClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+    }, []);
     return (
         <div className={styles.contentWrapper}>
             <div className={styles.content}>
@@ -31,8 +34,8 @@ const ProductsSection = () => {
                             <li className={styles.feature}>URL redirects</li>
                             <li className={styles.feature}>Advanced analytics & tracking</li>
                         </ul>
-                        <ActionLink href="" size="s" className={styles.getStartedForFreeLink}>Get Started for Free</ActionLink>
-                        <a href="" className={styles.learnMoreLink}>Learn More</a>
+                        <ActionLink href="" onClick={doNothingOnLinkClick} size="s" className={styles.getStartedForFreeLink}>Get Started for Free</ActionLink>
+                        <a href="" onClick={doNothingOnLinkClick} className={styles.learnMoreLink}>Learn More</a>
                     </div>
 
                     <div className={styles.productCard}>
@@ -48,8 +51,8 @@ const ProductsSection = () => {
                             <li className={styles.feature}>QR Code types & destination options</li>
                             <li className={styles.feature}>Advanced analytics & tracking</li>
                         </ul>
-                        <ActionLink href="" size="s" className={styles.getStartedForFreeLink}>Get Started for Free</ActionLink>
-                        <a href="" className={styles.learnMoreLink}>Learn More</a>
+                        <ActionLink href="" onClick={doNothingOnLinkClick} size="s" className={styles.getStartedForFreeLink}>Get Started for Free</ActionLink>
+                        <a href="" onClick={doNothingOnLinkClick} className={styles.learnMoreLink}>Learn More</a>
                     </div>
 
                     <div className={styles.productCard}>
@@ -67,8 +70,8 @@ const ProductsSection = () => {
                             <li className={styles.feature}>Easy-to-manage links</li>
                             <li className={styles.feature}>Link and landing page tracking</li>
                         </ul>
-                        <ActionLink href="" size="s" className={styles.getStartedForFreeLink}>Get Started for Free</ActionLink>
-                        <a href="" className={styles.learnMoreLink}>Learn More</a>
+                        <ActionLink href="" onClick={doNothingOnLinkClick} size="s" className={styles.getStartedForFreeLink}>Get Started for Free</ActionLink>
+                        <a href="" onClick={doNothingOnLinkClick} className={styles.learnMoreLink}>Learn More</a>
                     </div>
                 </div>
             </div>

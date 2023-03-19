@@ -64,7 +64,7 @@
     color: #2a5bd7;
 }
 
-.link::after {
+.topPart .link::after {
     display: block;
     content: '';
     background: #2a5bd7;
@@ -78,7 +78,7 @@
     margin-top: -3px;
 }
 
-.link:hover::after, .link:active::after {
+.topPart .link:hover::after, .topPart .link:active::after {
     width: 50%;
 }
 

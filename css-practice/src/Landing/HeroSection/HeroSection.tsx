@@ -1,3 +1,4 @@
+import React, {useCallback} from "react";
 import {useMedia} from 'react-use';
 
 import ActionLink from '../components/ActionLink/ActionLink';
@@ -5,6 +6,10 @@ import ActionLink from '../components/ActionLink/ActionLink';
 import styles from './HeroSection.module.css';
 const HeroSection = () => {
     const isMobileScreen = useMedia('(width < 640px)');
+    const doNothingOnLinkClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+    }, []);
+
     return (
         <div className={styles.container}>
             <img
@@ -26,9 +31,9 @@ const HeroSection = () => {
                             <br/>
                         </h1>
                         <div className={styles.linksBlock}>
-                            <ActionLink href="" size="l" className={styles.getStartedLink}>Get Started for Free</ActionLink>
+                            <ActionLink href="" onClick={doNothingOnLinkClick} size="l" className={styles.getStartedLink}>Get Started for Free</ActionLink>
                             <br />
-                            <a href="" className={styles.getQuoteLink}>Get a Quote</a>
+                            <a href="" onClick={doNothingOnLinkClick} className={styles.getQuoteLink}>Get a Quote</a>
                         </div>
                     </div>
                 </div>
