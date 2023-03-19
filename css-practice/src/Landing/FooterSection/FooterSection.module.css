@@ -39,6 +39,14 @@
     flex: 0 0 auto;
 }
 
+.link {
+    color: #1d1f21;
+}
+
+.link:hover, .link:active {
+    color: #13285e;
+}
+
 .copyright {
     font-size: .89rem;
     line-height: 1.2;
@@ -55,6 +63,10 @@
 
 i {
     color: #56575b;
+}
+
+i:hover, i:active {
+    color: #303033;
 }
 
 @media (width < 1024px) {
