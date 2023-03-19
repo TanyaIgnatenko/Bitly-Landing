@@ -74,6 +74,7 @@ const Header = () => {
                                    cn(styles.menuButton, styles.closedMenuButton)
                                }
                                onClick={toggleIsMenuOpened}
+                               aria-label="Open menu"
                            />
                         </div>
                     </div>
@@ -92,6 +93,7 @@ const Header = () => {
                             cn(styles.menuButton, styles.openedMenuButton)
                           }
                           onClick={toggleIsMenuOpened}
+                          aria-label="Close menu"
                         />
                       </div>
                     </div>

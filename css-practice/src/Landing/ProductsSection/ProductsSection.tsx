@@ -27,8 +27,8 @@ const ProductsSection = () => {
                             A comprehensive solution to help make every point of connection between your content and your audience more powerful.
                         </div>
                         <hr />
+                        <p className={styles.featuresTitle}>Popular Link Management Features</p>
                         <ul className={styles.featuresBlock}>
-                            <p className={styles.featuresTitle}>Popular Link Management Features</p>
                             <li className={styles.feature}>URL shortening at scale</li>
                             <li className={styles.feature}>Custom links with your brand</li>
                             <li className={styles.feature}>URL redirects</li>
@@ -44,8 +44,8 @@ const ProductsSection = () => {
                             QR Code solutions for every customer, business and brand experience.
                         </div>
                         <hr />
+                        <p className={styles.featuresTitle}>Popular QR Code Features</p>
                         <ul className={styles.featuresBlock}>
-                            <p className={styles.featuresTitle}>Popular QR Code Features</p>
                             <li className={styles.feature}>Fully customizable QR Codes</li>
                             <li className={styles.feature}>Dynamic QR Codes</li>
                             <li className={styles.feature}>QR Code types & destination options</li>
@@ -63,8 +63,8 @@ const ProductsSection = () => {
                             Bitly Link-in-bio, powered by Bitly Link Management, to help you curate, package and track your best links.
                         </div>
                         <hr />
+                        <p className={styles.featuresTitle}>Popular Link-in-bio Features</p>
                         <ul className={styles.featuresBlock}>
-                            <p className={styles.featuresTitle}>Popular Link-in-bio Features</p>
                             <li className={styles.feature}>Custom URLs for social media</li>
                             <li className={styles.feature}>Customizable landing page</li>
                             <li className={styles.feature}>Easy-to-manage links</li>
