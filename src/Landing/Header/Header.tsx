@@ -31,6 +31,7 @@ const Header = () => {
     return (
         <header className={cn(styles.header, {
           [styles.sticky]: isPageScrolled,
+          [styles.fullScreen]: isMenuOpened,
         })}>
             {isLarge && !isMenuOpened && (
                 <div className={styles.container}>
