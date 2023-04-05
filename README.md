@@ -1,19 +1,11 @@
-This project is a clone of the Bitly landing page.
+## A clone of Bitly landing
 
-**DEMO:** https://tanyaignatenko.github.io/bitly-landing
+A schowcase of css skills.
 
+**Demo:** https://tanyaignatenko.github.io/bitly-landing/
 
-#### Showcase of:
-- css skills
-- a responsive layout
-- support for mobile and tablets
-- a cross browser layout
-- an accessible layout
-- an optimization of image loading
-
-**Desktop layout:**
-![](img/desktop-layout.png)
-
-
-**Mobile layout:**
-![](img/mobile-layout.png)
+- Made a layout responsive
+- Added support for mobile and tablets
+- Made a layout cross-browser
+- Made a layout accessible
+- Optimized the loading of images
