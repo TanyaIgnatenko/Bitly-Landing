@@ -4,8 +4,8 @@ A schowcase of css skills.
 
 **Demo:** https://tanyaignatenko.github.io/bitly-landing/
 
-- Made a layout responsive
+- Made a responsive layout 
 - Added support for mobile and tablets
-- Made a layout cross-browser
-- Made a layout accessible
+- Made a cross-browser layout 
+- Made the layout accessible
 - Optimized the loading of images
