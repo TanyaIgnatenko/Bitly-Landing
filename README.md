@@ -9,3 +9,8 @@ A schowcase of css skills.
 - Made a cross-browser layout 
 - Made the layout accessible
 - Optimized the loading of images
+
+### Desktop layout:
+![Desktop layout](img/desktop-layout.png)
+### Mobile layout:
+![Mobile layout](img/mobile-layout.png)
