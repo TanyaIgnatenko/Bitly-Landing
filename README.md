@@ -2,7 +2,7 @@
 
 A schowcase of css skills.
 
-**Demo: https://tanyaignatenko.github.io/bitly-landing/**
+**Demo: https://tanyaignatenko.github.io/Bitly-Landing/**
 
 - Made a responsive layout 
 - Added support for mobile and tablets
